@@ -45,7 +45,9 @@ export default [
             'blob:',
             'res.cloudinary.com',
             'maps.gstatic.com',
-            'maps.googleapis.com'
+            'maps.googleapis.com',
+            'delicate-canvas-2a33cc3cdc.media.strapiapp.com',
+            '*.strapiapp.com'
           ],
           'img-src': [
             "'self'",
