@@ -75,6 +75,7 @@ export default [
             'khms3.google.com',
             'khms3.googleapis.com',
             'streetviewpixels-pa.googleapis.com',
+            'delicate-canvas-2a33cc3cdc.media.strapiapp.com'
           ],
           'form-action': [
             "'self'",
