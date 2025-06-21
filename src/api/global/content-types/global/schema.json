@@ -31,13 +31,7 @@
       "required": true
     },
     "siteNavigation": {
-      "type": "enumeration",
-      "enum": [
-        "home",
-        "works",
-        "about-us",
-        "contact-us"
-      ]
+      "type": "json"
     },
     "logo": {
       "type": "component",

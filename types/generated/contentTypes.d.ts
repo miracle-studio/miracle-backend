@@ -401,9 +401,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     siteDescription: Schema.Attribute.Text & Schema.Attribute.Required;
     siteEmail: Schema.Attribute.Email;
     siteName: Schema.Attribute.String & Schema.Attribute.Required;
-    siteNavigation: Schema.Attribute.Enumeration<
-      ['home', 'works', 'about-us', 'contact-us']
-    >;
+    siteNavigation: Schema.Attribute.JSON;
     sitePhone: Schema.Attribute.Component<'shared.input', false>;
     siteQr: Schema.Attribute.Media<'images'>;
     theme: Schema.Attribute.Enumeration<['light', 'dark']>;
