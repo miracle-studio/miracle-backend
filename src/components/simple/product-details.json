@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_simple_product_details",
+  "info": {
+    "displayName": "productDetails"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "component",
+      "component": "shared.icon",
+      "repeatable": false,
+      "required": true
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    },
+    "title": {
+      "type": "component",
+      "component": "shared.title",
+      "repeatable": false,
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "techData": {
+      "type": "component",
+      "component": "shared.badge",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_simple_product_cards",
+  "info": {
+    "displayName": "productCard"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

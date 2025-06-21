@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_shared_buttons",
+  "info": {
+    "displayName": "button"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": false
+    },
+    "type": {
+      "type": "enumeration",
+      "default": "button",
+      "enum": [
+        "button",
+        "submit"
+      ]
+    },
+    "variant": {
+      "type": "enumeration",
+      "default": "primary",
+      "enum": [
+        "primary",
+        "secondary",
+        "ghost",
+        "outline"
+      ]
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "sm",
+        "md",
+        "xl"
+      ]
+    },
+    "icon": {
+      "type": "component",
+      "component": "shared.icon",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

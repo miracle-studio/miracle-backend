@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_complex_contactuses",
+  "info": {
+    "displayName": "contactUs"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "component": "shared.title",
+      "repeatable": false,
+      "required": true
+    },
+    "data": {
+      "type": "component",
+      "component": "simple.banner",
+      "repeatable": false
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

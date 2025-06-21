@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_shared_links",
+  "info": {
+    "displayName": "link"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "text",
+      "required": true
+    },
+    "internal_link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "internal",
+        "external"
+      ]
+    },
+    "target": {
+      "type": "enumeration",
+      "default": "_self",
+      "enum": [
+        "_blank",
+        "_self"
+      ]
+    }
+  },
+  "config": {}
+}

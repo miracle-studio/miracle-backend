@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_complex_our_works",
+  "info": {
+    "displayName": "ourWorks"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "component": "shared.title",
+      "repeatable": false
+    },
+    "products": {
+      "type": "component",
+      "component": "simple.product-card",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

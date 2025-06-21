@@ -34,6 +34,10 @@ export interface AdminApiToken extends Struct.CollectionTypeSchema {
         minLength: 1;
       }> &
       Schema.Attribute.DefaultTo<''>;
+    encryptedKey: Schema.Attribute.Text &
+      Schema.Attribute.SetMinMaxLength<{
+        minLength: 1;
+      }>;
     expiresAt: Schema.Attribute.DateTime;
     lastUsedAt: Schema.Attribute.DateTime;
     lifespan: Schema.Attribute.BigInteger;
@@ -391,9 +395,18 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
       'api::global.global'
     > &
       Schema.Attribute.Private;
+    logo: Schema.Attribute.Component<'shared.icon', false>;
     publishedAt: Schema.Attribute.DateTime;
+    request: Schema.Attribute.Component<'complex.request-form', false>;
     siteDescription: Schema.Attribute.Text & Schema.Attribute.Required;
+    siteEmail: Schema.Attribute.Email;
     siteName: Schema.Attribute.String & Schema.Attribute.Required;
+    siteNavigation: Schema.Attribute.Enumeration<
+      ['home', 'works', 'about-us', 'contact-us']
+    >;
+    sitePhone: Schema.Attribute.Component<'shared.input', false>;
+    siteQr: Schema.Attribute.Media<'images'>;
+    theme: Schema.Attribute.Enumeration<['light', 'dark']>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

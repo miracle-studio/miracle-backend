@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_simple_product_goals",
+  "info": {
+    "displayName": "productGoals"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "assets": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "component",
+      "component": "shared.title",
+      "repeatable": false,
+      "required": true
+    }
+  },
+  "config": {}
+}

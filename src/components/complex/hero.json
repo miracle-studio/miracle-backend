@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_complex_heroes",
+  "info": {
+    "displayName": "hero"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "component": "shared.title",
+      "repeatable": false,
+      "required": true
+    },
+    "subTitle": {
+      "type": "component",
+      "component": "shared.title",
+      "repeatable": false
+    },
+    "cover": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

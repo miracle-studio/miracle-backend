@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_icons",
+  "info": {
+    "displayName": "icon"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "asset": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ]
+    }
+  },
+  "config": {}
+}

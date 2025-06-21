@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_complex_request_forms",
+  "info": {
+    "displayName": "requestForm"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "component": "shared.title",
+      "repeatable": false,
+      "required": false
+    },
+    "form": {
+      "type": "component",
+      "component": "simple.form",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

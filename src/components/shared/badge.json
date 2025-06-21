@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_badges",
+  "info": {
+    "displayName": "badge"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

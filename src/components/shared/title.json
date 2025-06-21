@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_titles",
+  "info": {
+    "displayName": "title"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "level": {
+      "type": "enumeration",
+      "default": "first",
+      "enum": [
+        "first",
+        "second",
+        "third",
+        "fourth",
+        "fifth",
+        "sixth"
+      ]
+    }
+  },
+  "config": {}
+}

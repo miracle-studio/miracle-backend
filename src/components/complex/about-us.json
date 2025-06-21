@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_complex_aboutuses",
+  "info": {
+    "displayName": "aboutUs"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "component": "shared.title",
+      "repeatable": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "user": {
+      "type": "component",
+      "component": "simple.user-card",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

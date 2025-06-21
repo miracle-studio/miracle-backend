@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_simple_user_cards",
+  "info": {
+    "displayName": "userCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "component": "shared.title",
+      "repeatable": false
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "CEO",
+        "CTO",
+        "worker",
+        "investor"
+      ]
+    },
+    "badge": {
+      "type": "component",
+      "component": "shared.badge",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

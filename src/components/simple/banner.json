@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_simple_banners",
+  "info": {
+    "displayName": "banner"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}
