@@ -50,12 +50,15 @@
       "required": true
     },
     "siteNavigation": {
-      "type": "json",
+      "type": "component",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "shared.link",
+      "repeatable": true,
+      "required": true
     },
     "logo": {
       "type": "component",

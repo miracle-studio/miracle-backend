@@ -32,28 +32,43 @@
         }
       }
     },
+    "slug": {
+      "type": "uid"
+    },
     "cover": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.media",
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "component": "shared.media",
+      "repeatable": false
     },
     "seo": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.seo",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "shared.seo",
+      "repeatable": false
     },
-    "slug": {
-      "type": "uid"
+    "blocks": {
+      "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "components": [
+        "complex.request-form",
+        "complex.our-works",
+        "complex.hero",
+        "complex.contact-us",
+        "complex.about-us"
+      ]
     }
   }
 }

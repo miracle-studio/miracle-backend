@@ -434,7 +434,8 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
-    siteNavigation: Schema.Attribute.JSON &
+    siteNavigation: Schema.Attribute.Component<'shared.link', true> &
+      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -481,6 +482,20 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     };
   };
   attributes: {
+    blocks: Schema.Attribute.DynamicZone<
+      [
+        'complex.request-form',
+        'complex.our-works',
+        'complex.hero',
+        'complex.contact-us',
+        'complex.about-us',
+      ]
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     cover: Schema.Attribute.Component<'shared.media', false> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
