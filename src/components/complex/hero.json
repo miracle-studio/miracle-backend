@@ -23,6 +23,11 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "animatedText": {
+      "type": "component",
+      "component": "simple.animated-text",
+      "repeatable": false
     }
   },
   "config": {}

@@ -32,6 +32,7 @@ export interface ComplexHero extends Struct.ComponentSchema {
     displayName: 'hero';
   };
   attributes: {
+    animatedText: Schema.Attribute.Component<'simple.animated-text', false>;
     cover: Schema.Attribute.Media<'images', true>;
     subTitle: Schema.Attribute.Component<'shared.title', false>;
     title: Schema.Attribute.Component<'shared.title', false> &
@@ -215,6 +216,17 @@ export interface SharedTitle extends Struct.ComponentSchema {
   };
 }
 
+export interface SimpleAnimatedText extends Struct.ComponentSchema {
+  collectionName: 'components_simple_animated_texts';
+  info: {
+    displayName: 'animatedText';
+  };
+  attributes: {
+    icon: Schema.Attribute.Component<'shared.icon', false>;
+    text: Schema.Attribute.String;
+  };
+}
+
 export interface SimpleBanner extends Struct.ComponentSchema {
   collectionName: 'components_simple_banners';
   info: {
@@ -319,6 +331,7 @@ declare module '@strapi/strapi' {
       'shared.open-graph': SharedOpenGraph;
       'shared.seo': SharedSeo;
       'shared.title': SharedTitle;
+      'simple.animated-text': SimpleAnimatedText;
       'simple.banner': SimpleBanner;
       'simple.form': SimpleForm;
       'simple.gallery': SimpleGallery;

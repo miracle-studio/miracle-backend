@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_simple_animated_texts",
+  "info": {
+    "displayName": "animatedText"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "component",
+      "component": "shared.icon",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
